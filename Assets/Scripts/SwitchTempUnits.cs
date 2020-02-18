@@ -19,28 +19,7 @@ public class SwitchTempUnits : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        gameObject.GetComponent<AudioSource>().Play();
-        isF = !isF;
-
-        if (tempText.GetComponent<GetWeather>().tempK == 0)
-        {
-            tempText.GetComponent<TextMeshProUGUI>().text = "Waiting for weather..";
-            if (isF)
-            {
-                unitText.GetComponent<TextMeshProUGUI>().text = "Switch to C";
-            }
-            else
-            {
-                unitText.GetComponent<TextMeshProUGUI>().text = "Switch to F";
-            }
-        }
-
-        else if (isF)
+        if (isF)
         {
             var temp = Math.Round(((tempText.GetComponent<GetWeather>().tempK - 273.15) * 9 / 5) + 32);
             tempText.GetComponent<TextMeshProUGUI>().text = "Temperature " + temp + " F";
@@ -52,5 +31,37 @@ public class SwitchTempUnits : MonoBehaviour
             tempText.GetComponent<TextMeshProUGUI>().text = "Temperature " + temp + " C";
             unitText.GetComponent<TextMeshProUGUI>().text = "Switch to F";
         }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        gameObject.GetComponent<AudioSource>().Play();
+        isF = !isF;
+
+        //if (tempText.GetComponent<GetWeather>().tempK == 0)
+        //{
+        //    tempText.GetComponent<TextMeshProUGUI>().text = "Waiting for weather..";
+        //    if (isF)
+        //    {
+        //        unitText.GetComponent<TextMeshProUGUI>().text = "Switch to C";
+        //    }
+        //    else
+        //    {
+        //        unitText.GetComponent<TextMeshProUGUI>().text = "Switch to F";
+        //    }
+        //}
+
+        //else if (isF)
+        //{
+        //    var temp = Math.Round(((tempText.GetComponent<GetWeather>().tempK - 273.15) * 9 / 5) + 32);
+        //    tempText.GetComponent<TextMeshProUGUI>().text = "Temperature " + temp + " F";
+        //    unitText.GetComponent<TextMeshProUGUI>().text = "Switch to C";
+        //}
+        //else
+        //{
+        //    var temp = Math.Round(tempText.GetComponent<GetWeather>().tempK - 273.15);
+        //    tempText.GetComponent<TextMeshProUGUI>().text = "Temperature " + temp + " C";
+        //    unitText.GetComponent<TextMeshProUGUI>().text = "Switch to F";
+        //}
     }
 }
