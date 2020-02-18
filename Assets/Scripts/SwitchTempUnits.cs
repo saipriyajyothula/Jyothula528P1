@@ -51,17 +51,6 @@ public class SwitchTempUnits : MonoBehaviour
         //    }
         //}
 
-        //else if (isF)
-        //{
-        //    var temp = Math.Round(((tempText.GetComponent<GetWeather>().tempK - 273.15) * 9 / 5) + 32);
-        //    tempText.GetComponent<TextMeshProUGUI>().text = "Temperature " + temp + " F";
-        //    unitText.GetComponent<TextMeshProUGUI>().text = "Switch to C";
-        //}
-        //else
-        //{
-        //    var temp = Math.Round(tempText.GetComponent<GetWeather>().tempK - 273.15);
-        //    tempText.GetComponent<TextMeshProUGUI>().text = "Temperature " + temp + " C";
-        //    unitText.GetComponent<TextMeshProUGUI>().text = "Switch to F";
-        //}
+        
     }
 }
