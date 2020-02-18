@@ -25,7 +25,7 @@ public class GetWeather : MonoBehaviour
         //Debug.Log(info.main.temp);
         try
         {
-            //Debug.Log(info.main.temp)
+            Debug.Log(info.main.temp);
             tempK = info.main.temp;
             //var temp = Math.Round(((info.main.temp - 273.15) * 9 / 5) + 32);
             //weatherdata = "Temperature " + temp + " F";
