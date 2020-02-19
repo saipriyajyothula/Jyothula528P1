@@ -1,12 +1,10 @@
 ﻿<Properties StartupConfiguration="{4FEC5824-91F5-73E6-3F0F-990474CE6509}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GetWeather.cs">
     <Files>
-      <File FileName="../../Desktop/528P1.html" Line="126" Column="43" />
       <File FileName="Assets/Scripts/LocationTeleport.cs" />
       <File FileName="Assets/Scripts/TeleportCameraFade.cs" />
       <File FileName="Assets/Scripts/GetWeather.cs" Line="28" Column="39" />
       <File FileName="Assets/Scripts/SwitchTempUnits.cs" />
-      <File FileName="Assets/Scripts/SwitchDay.cs" />
       <File FileName="Assets/Scripts/playAudio.cs" />
       <File FileName="Assets/Scripts/lightsplay.cs" />
     </Files>
@@ -48,7 +46,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f75a0253-f8fa-4963-abd6-97e9c4867462" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="7f8bd8cf-aefa-4509-89bd-a2328ae26029" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
